@@ -1,0 +1,27 @@
+/* Dark Mode - Muted Warm*/
+body {
+    background-color: #121212; /* True Black */
+    color: #E0E0E0; /* Soft White */
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(251, 140, 0, 0.2); /* Bright Warm Orange */
+    border-left: 5px solid #FB8C00;
+}
+
+button {
+    background-color: #FB8C00; /* Bright Warm Orange */
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F57C00; /* Slightly Muted Orange */
+}

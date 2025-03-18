@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Rohan Potta</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1>Hello, I'm <span>Rohan Potta</span></h1>
+      <p>Aspiring Developer | ML Enthusiast | DevOps Engineer</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm passionate about automation—whether it's setting up an on-premise
+        Kubernetes cluster using Ansible or using Python packages like
+        BeautifulSoup to build ML datasets.
+      </p>
+      <p>
+        My interests span from Machine Learning to DevOps, including Docker,
+        Kubernetes, and CI/CD pipelines. I love optimizing workflows and
+        deploying scalable solutions.
+      </p>
+      <p>
+        Beyond tech, I enjoy listening to music, watching anime and TV shows,
+        and discussing all things tech and entertainment.
+      </p>
+      <p>
+        Feel free to reach out if you'd like to chat about any of these topics
+        or just say hi!
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <!-- experience 1 -->
+        <div class="experience-card">
+          <p class="exp-date">Aug 2024 - Present</p>
+          <h3 class="exp-title">Devops Trainee</h3>
+          <p class="exp-description"></p>
+          <ul>
+            <li>
+              Automated Kubernetes Cluster Setup: Developed Ansible playbooks to
+              automate the provisioning and configuration of Kubernetes clusters
+              on on-premise servers, ensuring compatibility with both Debian and
+              CentOS environments.
+            </li>
+            <li>
+              Multi-Cloud Application Deployment: Deployed Flask applications as
+              Docker containers across AWS EC2 and Azure Web Apps, optimizing
+              for scalability and cross-platform compatibility.
+            </li>
+            <li>
+              MLOps & Model Deployment: Integrated MLflow for tracking and
+              version control of an unsupervised model detecting call connection
+              loss in PCAP files, streamlining the ML lifecycle. Designed and
+              implemented a Jenkins-based CI/CD pipeline for automated model
+              deployment, ensuring continuous updates and version control.
+            </li>
+            <li>
+              Observability & Monitoring: Built a Grafana dashboard for
+              real-time server observability, visualizing key system metrics
+              such as CPU, memory, disk usage, and network activity. Enhanced
+              troubleshooting with drill-down capabilities using Grafana's Data
+              Links feature, allowing seamless navigation to detailed logs and
+              metrics for in-depth analysis.
+            </li>
+          </ul>
+
+          <ul class="exp-tech">
+            <li>Ansible Playbooks</li>
+            <li>ML-Flow</li>
+            <li>Prometheus&Grafana</li>
+          </ul>
+        </div>
+        <!-- experience 2 -->
+        <div class="experience-card">
+          <p class="exp-date">Jan 2024 - July 2024</p>
+          <h3 class="exp-title">DevOps Intern - Veltris</h3>
+          <p class="exp-description"></p>
+          <ul>
+            <li>
+              Cloud & On-Premise Infrastructure: Gained hands-on experience
+              managing on-premise servers and deploying applications on AWS and
+              GCP, ensuring scalable and efficient cloud solutions.
+            </li>
+            <li>
+              E-Commerce Website Development: Designed and built a full-stack
+              e-commerce platform, with a responsive front end using HTML, CSS,
+              and JavaScript, and a Flask backend integrated with MongoDB for
+              secure data storage and API communication.
+            </li>
+            <li>
+              Containerization & Orchestration: Packaged the application into
+              Docker containers and deployed it on an AWS-hosted Kubernetes
+              cluster using YAML scripts, optimizing for scalability and
+              reliability.
+            </li>
+            <li>
+              CI/CD Automation & Infrastructure as Code: Developed a GitLab
+              CI/CD pipeline for seamless continuous integration and deployment,
+              and automated AWS infrastructure provisioning using Terraform,
+              ensuring a robust and maintainable deployment workflow.
+            </li>
+          </ul>
+
+          <ul class="exp-tech">
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>GitLab CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Kubernetes On-Premise Cluster Provisioning with Ansible</h3>
+          <ul>
+            <li>
+              Automated Kubernetes Deployment: Developed Ansible playbooks to
+              automate Kubernetes cluster setup on on-premise servers,
+              supporting both Debian/Ubuntu and RedHat-based systems.
+            </li>
+            <li>
+              Infrastructure Provisioning: Configured Ansible inventory files
+              for managing master and worker nodes, ensuring seamless
+              orchestration and scaling of the cluster.
+            </li>
+            <li>
+              Secure SSH Access & User Management: Automated the creation of
+              Ansible users, granted sudo privileges, and set up SSH key-based
+              authentication for secure, passwordless access to managed nodes.
+            </li>
+          </ul>
+          <a
+            href="https://github.com/Rohan-Potta/k8s-onprem-ansible"
+            target="_blank"
+            class="github-button"
+            >View on GitHub</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Movie Recommendation System</h3>
+          <ul>
+            <li>
+              Built an unsupervised machine learning model to recommend movies
+              using the IMDB Top 100 Movies Dataset.
+            </li>
+            <li>
+              Implemented an NLP-based recommendation approach using the Bag of
+              Words technique, combining movie titles, directors, overviews,
+              genres, and cast to enhance relevance.
+            </li>
+            <li>
+              Optimized data processing by removing stop words, vectorizing the
+              data, and computing cosine similarity to identify and suggest
+              similar movies based on key attributes.
+            </li>
+          </ul>
+          <a
+            href="https://github.com/Rohan-Potta/ml-movie-recommendation"
+            target="_blank"
+            class="github-button"
+            >View on GitHub</a
+          >
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Web Scraping: Building Dataset</h3>
+          <ul>
+            <li>
+              Automated data extraction using Python libraries, building
+              structured datasets from various websites.
+            </li>
+            <li>
+              Curated a recipe dataset from the BBC website to support ML models
+              in generating personalized recipes based on user-input
+              ingredients.
+            </li>
+            <li>
+              Collected and structured faculty data from the Mahindra University
+              website for chatbot integration, enabling quick and accurate
+              responses to user queries.
+            </li>
+          </ul>
+          <a
+            href="https://github.com/Rohan-Potta/WebScraping"
+            target="_blank"
+            class="github-button"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Email:
+        <a href="mailto:rohan.potta@yahoo.com" class="contact-link"
+          >rohan.potta@yahoo.com</a
+        >
+      </p>
+
+      <div class="contact-icons">
+        <a
+          href="https://www.linkedin.com/in/rohan-potta/"
+          target="_blank"
+          class="social-icon"
+        >
+          <img src="icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a
+          href="https://github.com/Rohan-Potta"
+          target="_blank"
+          class="social-icon"
+        >
+          <img src="icons/github.svg" alt="GitHub" />
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

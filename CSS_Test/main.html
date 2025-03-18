@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Switcher</title>
+    <link id="stylesheet" rel="stylesheet" href="style1.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .content { padding: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>CSS Tester</h1>
+    <label for="cssSelector">Choose a CSS file:</label>
+    <select id="cssSelector">
+        <option value="style1.css">Light Mode - Soft Orange</option>
+        <option value="style2.css">Dark Mode - Bold Orange</option>
+        <option value="style3.css">Light Mode - Muted Warm</option>
+        <option value="style4.css">Dark Mode - Muted Warm</option>
+        <option value="style5.css">Light Mode - Minimalist Soft</option>
+        <option value="style6.css">Dark Mode - Minimalist Soft</option>
+    </select>
+    
+    <div class="content">
+        <p>This is a test paragraph to see how different CSS files affect it.</p>
+        <button>Test Button</button>
+    </div>
+
+    <script>
+        document.getElementById("cssSelector").addEventListener("change", function() {
+            document.getElementById("stylesheet").setAttribute("href", this.value);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1c1c1c; /* Unified Background */
+  color: #f5f5f5; /* Light Gray */
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+  background: #1c1c1c; /* Dark background */
+  padding: 15px 0;
+  width: 100%;
+  position: fixed; /* Stick to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between; /* Space between logo & links */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff9100; /* Primary orange */
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Ensures spacing */
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 8px 12px; /* Adds clickable area */
+}
+
+.nav-links a:hover {
+  color: #ff9100; /* Orange highlight on hover */
+}
+
+/* Sections */
+section {
+  padding: 80px 10%;
+  text-align: center;
+  background: #1c1c1c; /* Ensures uniform background */
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 150px 20px;
+  margin-top: 60px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+}
+
+#hero span {
+  color: #ff9100; /* Bright Orange */
+}
+
+/* About Me Section */
+
+#about {
+  text-align: center;
+  padding: 80px 10%;
+  background: #1c1c1c;
+}
+
+#about h2 {
+  /* color: #FF9100; Primary Orange */
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  color: #f5f5f5; /* Light Gray Text */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Project Section */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap; /* Allows wrapping if space is limited */
+}
+
+.project-card {
+  background: #2a2a2a;
+  padding: 20px;
+  margin: 20px auto;
+  width: 45%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #ff9100; /* Primary orange */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #f5f5f5; /* Light text */
+  font-size: 16px;
+}
+
+.github-button {
+  display: inline-block;
+  background: #ff6f00; /* Deep Orange */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.github-button:hover {
+  background: #ff9100; /* Lighter orange on hover */
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-link {
+  color: #ff9100; /* Primary Orange */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.contact-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 40px; /* Adjust size */
+  height: 40px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Resume Link */
+#resume {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ff9100;
+  font-weight: bold;
+}
+
+#resume:hover {
+  color: #ff6f00;
+}
+
+/* Fix for Small Screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+/* Experience Section */
+#experience {
+  text-align: center;
+  padding: 80px 10%;
+  background: #1c1c1c;
+}
+
+.experience-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap; /* Allows wrapping if space is limited */
+}
+
+/* Experience Cards */
+.experience-card {
+  background: #2a2a2a;
+  padding: 20px;
+  margin: 20px auto;
+  width: 45%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* Experience Date */
+.exp-date {
+  font-size: 0.9rem;
+  color: #ff9100;
+  font-weight: bold;
+}
+
+/* Experience Title */
+.exp-title {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  margin: 5px 0;
+}
+
+/* Experience Description */
+.exp-description {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin: 10px 0;
+}
+
+/* Technologies List */
+.exp-tech {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.exp-tech li {
+  display: inline-block;
+  background: #ff6f00;
+  color: #1c1c1c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
