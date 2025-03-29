@@ -46,7 +46,7 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px; /* Ensures spacing */
+  gap: 5px; /* Ensures spacing */
 }
 
 .nav-links li {
@@ -281,3 +281,69 @@ section {
   margin: 5px;
   font-weight: bold;
 }
+
+
+/* Experience Section */
+#certification {
+  text-align: center;
+  padding: 80px 10%;
+  background: #1c1c1c;
+}
+
+.certification-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap; /* Allows wrapping if space is limited */
+}
+
+/* certification Cards */
+.certification-card {
+  background: #2a2a2a;
+  padding: 20px;
+  margin: 20px auto;
+  width: 45%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* certification Date */
+.certification-date {
+  font-size: 0.9rem;
+  color: #ff9100;
+  font-weight: bold;
+}
+
+/* certification Title */
+.certification-title {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  margin: 5px 0;
+}
+
+/* certification Description */
+.certification-description {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin: 10px 0;
+}
+
+/* certification Technologies List */
+.certification-tech {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.certification-tech li {
+  display: inline-block;
+  background: #ff6f00;
+  color: #1c1c1c;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
